@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS -->
+     <link rel="stylesheet" href="../styles/styles.css">
+    <title>Andrea Veizaga | Proyectos</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+       <div class="container-fluid">
+       <a class="navbar-brand" href="#">
+        <img class="logo" src="../archivos/logo_princpal.png" alt="logo de marca personal Andrea Maria Veizaga" title="logo de Andrea Veizaga">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="../index.html" aria-label="Inicio" title="Inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sobremi.html" aria-label="Sobre mí" title="Sobre mí">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-label="Proyectos" title="Proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./servicios.html" aria-label="Servicios" title="Servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html" aria-label="Contacto" title="Contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>  
+    </header>
+    <main>
+        <section class="proyectos">
+            <article>
+                <h1>Proyectos</h1>
+            </article>
+            <article class="texto_proyectos">
+                <p>Una selección de experiencias digitales donde la investigación meticulosa se encuentra con el diseño sistemático. Cada proyecto se aborda como un problema único a resolver, priorizando las necesidades del usuario y los objetivos de negocio a través de una lente artesanal.</p>
+            </article>
+        </section>
+        <section class="mis_proyectos">
+            <a href="#" class="un_proyecto">
+                <figure>
+             <img class="fotoproyecto" src="../archivos/Fotos/fotoportada_pedidosya.png" alt="Portada del caso de estudio del proyecto PedidosYa" title="Proyecto PedidosYa">
+             <figcaption>Proyecto PedidosYa - Caso de estudio UX Research</figcaption>   
+            </figure>
+            <div class="titulo_proy">
+                <h3>Entre la intención y la acción</h3>
+                <p>Entendiendo la experiencia de donar en PedidosYa</p>
+            </div>
+            </a>
+            <a href="#" class="un_proyecto">
+            <figure>
+                <img class="fotoproyecto" src="../archivos/Fotos/fotoportada_prime.png" alt="Portada del caso de estudio del proyecto Prime Cinemas" title="Proyecto Prime Cinemas">
+                <figcaption>Proyecto Prime Cinemas - Caso de estudio UX/UI Design</figcaption>
+            </figure>
+            <div class="titulo_proy">
+                <h3>Una experiencia de compra sin fricciones</h3>
+                <p>Optimización del flujo de compra de entradas en Prime Cinemas</p>
+            </div>
+            </a>
+            <a href="#" class="un_proyecto">
+            <figure>
+                <img class="fotoproyecto" src="../archivos/Fotos/portada_rico.png" alt="Portada del caso de estudio del proyecto Rico" title="Proyecto Rico">
+                <figcaption> Proyecto Rico - Caso de estudio UX writing</figcaption>
+            </figure>
+            <div class="titulo_proy">
+                <h3>La mesa perfecta, en menos pasos</h3>
+                <p>Descubrir restaurantes, realizar reservas y disfrutar de forma simple</p>
+            </div>
+            </a>
+            <a href="#" class="un_proyecto">
+            <figure>
+                <img class="fotoproyecto" src="../archivos/Fotos/portada_nestart.png" alt="Portada del caso de estudio del proyecto Nestart" title="Proyecto Nestart">
+                <figcaption> Proyecto Nestart - Caso de estudio UX/UI design</figcaption>
+            </figure>
+            <div class="titulo_proy">
+                <h3>Simplificando la búsqueda de un nuevo hogar</h3>
+                <p>Diseño UX/UI de una app para buscar y gestionar la compra o alquiler de inmuebles</p>
+            </div>
+            </a>
+        </section>
+    </main>
+     <footer>
+<p>Desarrollado por Andrea Veizaga</p>
+<p>&copy;<span id="year"></span>Todos los derechos reservados</p>
+<nav class="footernav">
+    <ul class="rss">
+        <li>
+            <a href="https://www.instagram.com/andreamaria.vt/" target="_blank" title="Instagram" aria-label="Instagram">
+                <img class="logo_rss" src="../archivos/logos/instagram.png" alt="Logo de instagram" title="logo de instagram">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/andrea.veizagatapia" target="_blank" title="Facebook" aria-label="Facebook">
+                <img class="logo_rss" src="../archivos/logos/facebook.png" alt="Logo de Facebook" title="logo de Facebook">
+            </a>
+        </li>
+        <li>
+            <a href="https://wa.me/+59176989090" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+                <img class="logo_ws" src="../archivos/logos/whatsapp.png" alt="Logo de WhatsApp" title="logo de WhatsApp">
+            </a>
+        </li>
+    </ul>
+</nav>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <!-- Bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
