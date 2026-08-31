@@ -338,6 +338,10 @@ margin: 32px 20px;
 .carousel-caption{
     color: #000000;
 }
+.icono-servicio{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
 /* MOBILE FIRST CONTACTO............................................. */
 /* contacto */
 .contacto{
