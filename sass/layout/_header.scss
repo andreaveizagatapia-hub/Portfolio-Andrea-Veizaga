@@ -1,0 +1,46 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+header{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: v.$color-blanco;
+    .navbar{
+        padding: 10px 20px;
+    }
+    .logo{
+        width: 184px;
+        height: 36px;
+    }
+    .navbar-nav{
+        gap: 8px;
+    }
+    .nav-link{
+        font-family: v.$fuente-texto;
+        text-decoration: none;
+        color: v.$color-texto;
+        padding: 5px 2px;
+        transition: 0.3s;
+        &:hover,
+        &:focus,
+        &:active{
+            color: v.$color-boton;
+        }
+    }
+    @include m.desktop{
+        padding: 1px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    nav{
+        ul{
+            li{
+            list-style: none;
+            }
+            @include m.desktop{
+            gap: 15px;
+            }
+        }
+    }
+}

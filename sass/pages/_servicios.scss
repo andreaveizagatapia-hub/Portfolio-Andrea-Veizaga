@@ -1,0 +1,59 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+.titulo_serv{
+    margin: 40px 20px;
+    padding-right: 0px;
+    @include m.desktop{
+        margin: 64px;
+        padding-right: 700px;
+    }
+}
+.servicios{
+    margin: 40px 20px;
+    @include m.desktop{
+        margin: 64px;
+    }
+    .h2_serv{
+        text-align: center;
+        margin-bottom: 40px;
+        @include m.desktop{
+            margin-bottom: 64px;
+        }
+    }
+    .lista_serv{
+        list-style: none;
+        padding: 0px;
+        @include m.flex(row, wrap, center, stretch, 20px);
+        @include m.desktop{
+            gap: 40px;
+        }
+        li{
+            text-align: center;
+            width: 100%;
+            height: auto;
+            min-height: 220px;
+            padding: 30px 20px;
+            background-color: v.$color-blanco;
+            border: v.$color-borde solid 1px;
+            border-radius: 10px;
+            @include m.desktop{
+                width: 480px;
+                height: 250px;
+                padding: 30px;
+            }
+        }
+    }
+}
+.icono-servicio{
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+.proceso{
+    margin: 40px 20px;
+    @include m.desktop{
+        margin: 64px;
+    }
+    .carousel-caption{
+        color: v.$color-texto;
+    }
+}

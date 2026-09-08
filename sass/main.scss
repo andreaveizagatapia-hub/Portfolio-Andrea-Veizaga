@@ -1,0 +1,11 @@
+@use "./base/base";
+@use "./base/tipografias";
+
+@use "./layout/header";
+@use "./layout/footer";
+
+@use "./pages/home";
+@use "./pages/sobremi";
+@use "./pages/proyectos";
+@use "./pages/servicios";
+@use "./pages/contacto";

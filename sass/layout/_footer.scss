@@ -1,0 +1,38 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+footer{
+    padding: 20px;
+    @include m.flex(column, nowrap, flex-start, center, 15px);
+    background-color: v.$color-secundario;
+    .footernav{
+        .rss{
+            display: flex;
+            gap: 15px;
+            padding: 0px;
+            margin: 0px;
+            li{
+                list-style: none;
+                a{
+                    .logo_rss{
+                        height: 5vh;
+                        width: auto;
+                    }
+                    .logo_ws{
+                        position: fixed;
+                        bottom: 30px;
+                        right: 20px;
+                        height: 5vh;
+                        width: auto; 
+                    }
+                }
+            }
+
+        }
+    }
+    @include m.desktop{
+        padding: 1px;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

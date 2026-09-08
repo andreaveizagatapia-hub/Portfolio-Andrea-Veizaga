@@ -1,0 +1,16 @@
+@use "../utilities/variables" as v;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: v.$color-fondo;
+}
+footer{
+    background-color: v.$color-secundario;
+}
+header{
+    background-color: v.$color-blanco;
+}

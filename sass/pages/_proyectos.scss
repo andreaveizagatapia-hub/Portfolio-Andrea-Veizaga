@@ -1,0 +1,51 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+.proyectos{
+    margin: 32px 20px;
+    @include m.desktop{
+        margin: 64px;
+    }
+    .texto_proyectos{
+        padding-right: 0px;
+        @include m.desktop{
+            padding-right: 600px;
+        }
+    }
+}
+.mis_proyectos{
+    margin: 32px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @include m.desktop{
+        margin: 64px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .un_proyecto{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        background-color: v.$color-blanco;
+        text-decoration: none;
+        color: v.$color-texto;
+        transition: 0.3s;
+        &:hover{
+            background-color: v.$color-secundario;
+        }
+        &:focus{
+            background-color: v.$color-secundario;
+        }
+        &:active{
+            background-color: v.$color-boton;
+            color: v.$color-blanco;
+        }
+        .fotoproyecto{
+            width: 100%;
+            height: auto;
+            border-radius: 20px; 
+        }
+        .titulo_proy{
+            padding: 0px 20px 20px 20px;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+.hero{
+    padding: 40px 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "herotexto" "fotohero" ;
+    gap: 40px;
+    .herotexto{
+        grid-area: herotexto;
+        @include m.flex(column, nowrap, start, stretch, 20px);
+        nav{
+            @include m.flex(row, wrap, flex-start,stretch, 15px);
+            a{
+                background-color: v.$color-boton;
+                color: v.$color-blanco;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 8px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: v.$color-blanco;
+                    color: v.$color-boton;
+                }
+                &:focus{
+                    background-color: v.$color-secundario;
+                    color: v.$color-texto;
+                }
+                &:active{
+                    background-color: v.$color-texto;
+                    color: v.$color-blanco;
+                }
+            }
+        }
+    }
+    .fotohero{
+        grid-area: fotohero;
+        width: 100%;
+        .fotoinicio{
+            width: 100%;
+            height: auto;
+        }
+    }
+    @include m.desktop{
+        padding: 100px 120px 64px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "herotexto fotohero";
+        gap: 40px;
+        align-items: center;
+    }
+ }
+.biografia{
+    text-align: center;
+    padding-bottom: 40px;
+    @include m.desktop{
+        padding-bottom: 64px;
+    }
+    .textobio{
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1rem;
+        @include m.desktop{
+            margin-left: 250px;
+            margin-right: 250px;
+            font-size: 1.5rem;
+        }
+    }
+ }
+.habilidades{
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 64px;
+    @include m.flex(column, nowrap, start,stretch, 20px);
+    @include m.desktop{
+        margin-left: 64px;
+        margin-right: 0px;
+    }
+    .lista_habilidades{
+        @include m.flex(column, nowrap, start,stretch, 16px);
+        list-style: none;
+        li{
+            background-color: v.$color-blanco;
+            border: 1px solid v.$color-borde;
+            border-radius: 10px;
+            padding: 20px 20px;
+            margin-right: 0px;
+        }
+        @include m.desktop{
+            margin-right: 64px;
+        }
+    }
+ }

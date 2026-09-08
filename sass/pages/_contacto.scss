@@ -1,0 +1,101 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 32px 20px;
+    @include m.desktop{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 64px;
+        margin: 64px;
+    }
+    .info_contacto{
+        padding-right: 0px;
+        ul{
+            padding: 20px 0px;
+            list-style: none;
+            @include m.desktop{
+                padding: 20px 20px 20px 0px;
+            }
+        }
+        .logo_rss{
+            height: 5vh;
+            width: auto;
+        }
+    }
+    .datos{
+        @include m.flex(column, nowrap, start, stretch, 10px);
+        li{
+            margin: 0px;
+            padding: 12px 0px;
+            @include m.desktop{
+                margin: 0px 0px 20px 0px;
+                padding: 12px;
+            }  
+        }
+        @include m.desktop{
+            gap: 0px;
+        }
+    }
+    .formulario{
+        width: 100%;
+        padding: 24px;
+        background-color: v.$color-secundario;
+        border-radius: 20px;
+        @include m.desktop{
+            padding: 30px;
+        }
+        .fila_form{
+            @include m.flex(column, nowrap, start, stretch, 20px);
+            div{
+                width: 100%;
+            }
+            @include m.desktop{
+                flex-direction: row;
+                gap: 20px;
+                div{
+                    width: 50%;
+                }
+            }  
+        }
+        div{
+            margin-bottom: 10px;
+            label{
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            }
+            .campo_form{
+                width: 100%;
+            }
+            .boton_formulario{
+                background-color: v.$color-boton;
+                color: v.$color-blanco;
+                border: 2px solid v.$color-boton;
+                padding: 10px 20px;
+                border-radius: 8px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: v.$color-blanco;
+                    color: v.$color-boton;
+                }
+                &:focus{
+                    background-color: v.$color-secundario;
+                    color: v.$color-texto;
+                }
+                &:active{
+                    background-color: v.$color-texto;
+                    color: v.$color-blanco;
+                }
+            }
+            &:last-child{
+                display: flex;
+                gap: 15px;
+            }
+        }
+        textarea{
+            height: 280px;
+        }
+    }
+}
