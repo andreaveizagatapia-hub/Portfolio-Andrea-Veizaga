@@ -7,6 +7,10 @@
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!--  AOS Animate-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Animated -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Andrea Maria Veizaga | Portfolio</title>
@@ -86,7 +90,7 @@
       </div>
     </section>
     <section>
-      <article class="biografia">
+      <article class="biografia" data-aos="fade-up" data-aos-duration="2000">
         <h2>Biografía</h2>
         <p class="textobio">
           Mi camino hacia UX/UI comenzó mucho antes de aprender a diseñar productos digitales. Mi experiencia me enseñó
@@ -104,15 +108,15 @@
       </article>
       <article>
         <ul class="lista_habilidades">
-          <li>Investigación de usuarios (UX Research)</li>
-          <li>Entrevistas y encuestas</li>
-          <li>Testeos de usabilidad</li>
-          <li>Arquitectura de la información</li>
-          <li>User Persona</li>
-          <li>User Journey Map</li>
-          <li>Wireframing y prototipado en Figma</li>
-          <li>Diseño de interfaces (UI)</li>
-          <li>UX Writing</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Investigación de usuarios (UX Research)</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Entrevistas y encuestas</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"> Testeos de usabilidad</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Arquitectura de la información</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">User Persona</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">User Journey Map</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Wireframing y prototipado en Figma</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Diseño de interfaces (UI)</li>
+          <li data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">UX Writing</li>
         </ul>
       </article>
     </section>
@@ -148,6 +152,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+  <!-- AOS Animated -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+   </script>
 </body>
 
 </html>
