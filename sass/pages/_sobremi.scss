@@ -14,8 +14,7 @@
         @include m.flex(column, nowrap, start, stretch, 20px);
         figure{
             .fotosobremi{
-                width: 100%;
-                height: auto;
+                @extend %width100;
                 @include m.desktop{
                     width: 629px;
                     height: 944px; 

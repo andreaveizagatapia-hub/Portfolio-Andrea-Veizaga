@@ -17,6 +17,11 @@ header {
   background-color: #FDFCFA;
 }
 
+.servicios .lista_serv li, .mis_proyectos .un_proyecto, .mis_proyectos .un_proyecto .fotoproyecto, .sobre_mi .presentacion figure .fotosobremi, .hero .fotohero .fotoinicio {
+  width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Karla", sans-serif;
 }
@@ -185,10 +190,6 @@ footer .footernav .rss li a .logo_ws {
   grid-area: fotohero;
   width: 100%;
 }
-.hero .fotohero .fotoinicio {
-  width: 100%;
-  height: auto;
-}
 @media (min-width: 1024px) {
   .hero {
     padding: 100px 120px 64px;
@@ -280,10 +281,6 @@ footer .footernav .rss li a .logo_ws {
   justify-content: start;
   align-items: stretch;
   gap: 20px;
-}
-.sobre_mi .presentacion figure .fotosobremi {
-  width: 100%;
-  height: auto;
 }
 @media (min-width: 1024px) {
   .sobre_mi .presentacion figure .fotosobremi {
@@ -458,8 +455,6 @@ footer .footernav .rss li a .logo_ws {
   }
 }
 .mis_proyectos .un_proyecto {
-  width: 100%;
-  height: auto;
   border-radius: 20px;
   background-color: #FDFCFA;
   text-decoration: none;
@@ -477,8 +472,6 @@ footer .footernav .rss li a .logo_ws {
   color: #FDFCFA;
 }
 .mis_proyectos .un_proyecto .fotoproyecto {
-  width: 100%;
-  height: auto;
   border-radius: 20px;
 }
 .mis_proyectos .un_proyecto .titulo_proy {
@@ -530,8 +523,6 @@ footer .footernav .rss li a .logo_ws {
 }
 .servicios .lista_serv li {
   text-align: center;
-  width: 100%;
-  height: auto;
   min-height: 220px;
   padding: 30px 20px;
   background-color: #FDFCFA;

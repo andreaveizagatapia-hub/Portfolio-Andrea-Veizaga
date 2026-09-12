@@ -37,8 +37,7 @@
         grid-area: fotohero;
         width: 100%;
         .fotoinicio{
-            width: 100%;
-            height: auto;
+            @extend %width100;
         }
     }
     @include m.desktop{
